@@ -1,0 +1,329 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-size:62.5%;
+      background: #E2E4E7;
+      padding: 0;
+      text-align: left;
+      font-family: 'Lato', 'appleLogo', 'arial', sans-serif;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+      height: 100% !important;
+      height: 100%;
+      margin: 0 auto; 
+      overflow: hidden;
+    }
+    
+a:link,
+a:visited {
+  color:#FFF;
+  text-decoration:none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration:underline;
+}
+    
+    h1, h2 {
+      width: 100%;
+      color: white;
+      font-weight: 100;
+    }
+    h1 {
+      font-size:4.5em;
+      padding:1.2em 0 0 0;
+      letter-spacing: -1px;
+      font-weight: 600;
+    }
+    .shadow-b {
+      text-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    }
+    .shadow-w {
+      text-shadow: 0 1px 10px rgba(255,255,255,0.8);    
+    }
+    h2 {
+      font-size:2.5em;
+      padding:0.5em 0 0.5em 0;
+      
+    }
+
+    h3 {
+      font-size:2em;
+      letter-spacing: -1px;   
+      padding:0.5em 0 0.5em 0;
+    }
+
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+
+    .tagline {
+      color: rgba(0,0,0,0.7);
+      border-radius: 5px;      
+      text-align: left;
+      font-size: 2.5em;
+
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    code {
+      margin: 10px 1%;
+      float: left;
+      width: 48%;
+      color: rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.5) 5px solid;
+      padding:5px;
+      min-height: 50px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 2.5em;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    code.quote {
+      border: rgba(0,0,0,0.05) 5px solid;
+      font-style: italic;
+      color: rgba(0,0,0,0.5);
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+    
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+    
+    .reload, .btn{
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #444;
+    }
+    .btn {
+      width: 200px;
+      color: rgb(255, 255, 255);
+      border: 4px solid rgb(0, 0, 0);
+      background: rgba(3, 3, 3, 0.75);
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #444;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: rgba(0,0,0,0.5);
+      padding: 10px;
+      width: 410px;
+      clear: both;
+    }
+    .credit a {
+      color: rgba(0,0,0,0.85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    header {
+      position: relative;
+      z-index: 10;
+    }
+
+/* **  GENERIC ************************************************************ */    
+    .main section .page_container {
+      position: relative;      
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    .main section .page_container {
+      margin-top: 4%;
+      overflow: hidden;
+    }
+
+/* **  BACKGROUND IMAGES ************************************************************ */
+    .main section.page1 {
+      background: #FFC89B url(../image/brain-running.png) no-repeat 3% 20px;
+      background-size: 35%;      
+    }
+    .main section.page2 {
+      background: rgb(230, 217, 200) url(../image/tactac-iphone.png) no-repeat 95% 50%;
+      background-size: 15%;
+    }
+    .main section.page3 {
+      background: #61B3D3 url(../image/extract_personnage_tactac-04.png) no-repeat 10% 90%;
+      background-size: 20%;      
+    }
+    .main section.page4 {
+      background: #FFFDA5 url(../image/extract_personnage_tactac-05.png) no-repeat 95% 90%;
+      background-size: 25%;      
+    }    
+    .main section.page5 {
+      background: #3DB56D url(../image/extract_personnage_tactac-01.png) no-repeat 1% 90%;
+      background-size: 40%;      
+    }
+    .main section.page6 {
+      background: url(../image/home_consultancy.png) no-repeat 95% 90%;
+      background-size: 20%;
+    }
+
+/* *** CUSTOM COLOR**************** */
+
+    .main section.page1 h1,
+    .main section.page1 h2,
+    .main section.page2 h1,
+    .main section.page2 h2,
+    .main section.page4 h1,
+    .main section.page4 h2,
+    .main section.page6 h2
+    {
+      color: black;
+    }
+
+    .main section.page1 .page_container,
+    .main section.page3 .page_container,
+    .main section.page5 .page_container  {
+      margin-left: 40%;
+      margin-right: 35px;
+    }
+    .main section.page2 .page_container,
+    .main section.page4 .page_container
+    {
+      margin-left: 35px;
+      margin-right: 25%;
+    }
+    .main section.page6 .page_container  {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+
+/* *** MOBILE OR SMALL DISPLAY : .disabled-onepage-scroll; *********************************************************** */
+
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page4 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page2 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      height: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page4 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
